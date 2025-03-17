@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: telegram-copperx-payout-bot
+    env: node
+    buildCommand: yarn install && yarn build
+    startCommand: yarn start:prod
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: WEBHOOK_DOMAIN
+        sync: false
+      - key: COPPERX_API_URL
+        value: https://income-api.copperx.io/api
+      - key: PUSHER_APP_KEY
+        value: e089376087cac1a62785
+      - key: PUSHER_APP_CLUSTER
+        value: ap1
