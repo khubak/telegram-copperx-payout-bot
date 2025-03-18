@@ -21,9 +21,9 @@ async function bootstrap() {
     .setDescription('API documentation for the Telegram CopperX Payout Bot')
     .setVersion('1.0')
     .addTag('auth', 'Authentication endpoints')
-    .addTag('wallet', 'Wallet management endpoints')
-    .addTag('transfer', 'Fund transfer endpoints')
-    .addTag('notification', 'Notification endpoints')
+    //.addTag('wallet', 'Wallet management endpoints')
+    // .addTag('transfer', 'Fund transfer endpoints')
+    // .addTag('notification', 'Notification endpoints')
     .addBearerAuth()
     .build();
 
